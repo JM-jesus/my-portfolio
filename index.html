@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Jara" />
+    <meta
+      id="meta-description"
+      name="description"
+      content="Comprehensive solutions in Full Stack development, modern web design, and exceptional user experiences."
+    />
+    <meta
+      id="meta-keywords"
+      name="keywords"
+      content="Full Stack development, digital solutions, web design, SEO, web applications, modern technologies"
+    />
+    <meta name="theme-color" content="#0077B6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Jesus Jara</title>
+    <link rel="icon" href="./asset/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./asset/favicon/android-chrome-192x192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="./asset/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./asset/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0k0wPmSYEcrMY4JZO",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container__loader">
+      <div class="loader">
+        <div class="loader__circle"></div>
+        <p class="loader__message">Loading...</p>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" id="logo-text">Jesus</a>
+      </div>
+
+      <nav class="navbar">
+        <div class="bx bx-x navbar__close"></div>
+        <a href="#about" class="navbar__ancor" id="nav-about">About Me</a>
+        <a href="#service" class="navbar__ancor" id="nav-services">Services</a>
+        <a href="#portfolio" class="navbar__ancor" id="nav-portfolio"
+          >Portfolio</a
+        >
+        <a href="#contact" class="navbar__ancor" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="container__right">
+        <div class="language">
+          <i class="bx bx-globe" id="language__icon"></i>
+          <div id="language__dropdown" class="language__dropdown">
+            <div class="language__option" data-lang="es" id="lang-es">
+              Spanish
+            </div>
+            <div class="language__option" data-lang="en" id="lang-en">
+              English
+            </div>
+          </div>
+        </div>
+
+        <button id="darkModeBtn" class="dark__mode">
+          <i id="darkModeIcon" class="bx bx-moon dark__mode--icon"></i>
+        </button>
+
+        <div class="bx bx-menu header__btn"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home section hero" id="inicio">
+        <div class="home__content">
+          <h2 id="hero-title">Innovation, Design, and Code</h2>
+          <h4 id="hero-subtitle">
+            Let’s transform your ideas into unique digital experiences.
+          </h4>
+
+          <div class="home__social--media">
+            <a
+              href="https://web.facebook.com/JesusJaraDev"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+
+            <a
+              href="https://github.com/JM-jesus"
+              aria-label="Github"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jesus-miguel-jara-955689341/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero__image" loading="lazy"></div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__content">
+          <article class="about__description">
+            <aside class="about__content--title">
+              <h1 id="about-name">Jesus Jara</h1>
+              <h5 id="about-title">Programmer & Web Developer</h5>
+            </aside>
+            <p id="about-description-1">Hi, I’m Jesus</p>
+            <p id="about-description-2">
+              Hi, I’m Jesus Passionate about developing modern web applications
+              that blend design, functionality, and performance.
+            </p>
+            <p id="about-description-3">
+              I specialize in creating custom digital solutions that bridge
+              technology with user experience. From backend architecture to
+              front-end interfaces, every project is an opportunity to innovate
+              and exceed expectations.
+            </p>
+            <p id="about-description-4">
+              With a focus on Full Stack development, I have experience working
+              with modern tools to deliver scalable, secure, and visually
+              appealing applications.
+            </p>
+            <p id="about-description-5">
+              Whether you need a custom web platform or a complete application,
+              I am here to turn your ideas into digital realities.
+            </p>
+            <a href="#" id="download-cv" class="btn">Download CV</a>
+          </article>
+
+          <article class="about__card">
+            <img
+              class="about__card--img"
+              src="asset/image/avatar.jpeg"
+              loading="lazy"
+              alt="my photo"
+            />
+          </article>
+        </div>
+
+        <div class="about__skill">
+          <article class="about__skills">
+            <h3 class="about__skills--title" id="skills-title">My Skills</h3>
+            <div class="about__skills--progress">
+              <p>
+                <b id="frontend-title">Frontend <i>Web Development</i></b>
+                <b id="frontend-percentage">70%</b>
+              </p>
+              <progress value="70" min="0" max="100"></progress>
+            </div>
+
+            <div class="about__skills--progress">
+              <p>
+                <b id="webdesign-title">Web <i>Design</i></b>
+                <b id="webdesign-percentage">60%</b>
+              </p>
+              <progress value="60" min="0" max="100"></progress>
+            </div>
+
+            <div class="about__skills--progress">
+              <p>
+                <b id="wpo-seo-title"><i>WPO</i> and <i>SEO</i></b>
+                <b id="wpo-seo-percentage">40%</b>
+              </p>
+              <progress value="40" min="0" max="100"></progress>
+            </div>
+
+            <div class="about__skills--progress">
+              <p>
+                <b id="backend-title">Backend <i>Web Development</i></b>
+                <b id="backend-percentage">75%</b>
+              </p>
+              <progress value="75" min="0" max="100"></progress>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="service section" id="service">
+        <h3 class="section__title" id="service-title">What do I Offer?</h3>
+
+        <div class="service__container">
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.6667 4H5.33334C3.86267 4 2.66667 5.196 2.66667 6.66667V25.3333C2.66667 26.804 3.86267 28 5.33334 28H26.6667C28.1373 28 29.3333 26.804 29.3333 25.3333V6.66667C29.3333 5.196 28.1373 4 26.6667 4ZM5.33334 25.3333V9.33333H26.6667L26.6693 25.3333H5.33334Z"
+                fill="#00509E"
+              />
+              <path
+                d="M12.3907 12.3906L7.448 17.3333L12.3907 22.276L14.276 20.3906L11.2187 17.3333L14.276 14.276L12.3907 12.3906ZM19.6093 12.3906L17.724 14.276L20.7813 17.3333L17.724 20.3906L19.6093 22.276L24.552 17.3333L19.6093 12.3906Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="web-programming-title">Web Programming</h3>
+            <p id="web-programming-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.6667 4H9.33334C7.86267 4 6.66667 5.196 6.66667 6.66667V9.33333H5.33334C3.86267 9.33333 2.66667 10.5293 2.66667 12V25.3333C2.66667 26.804 3.86267 28 5.33334 28H13.3333C14.804 28 16 26.804 16 25.3333H26.6667C28.1373 25.3333 29.3333 24.1373 29.3333 22.6667V6.66667C29.3333 5.196 28.1373 4 26.6667 4ZM8.00001 12H13.3333L13.3293 24H5.33334V12H8.00001ZM16 22.6667V12C16 10.5293 14.804 9.33333 13.3333 9.33333H9.33334V6.66667H24V22.6667H16Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="web-design-title">Web Design</h3>
+            <p id="web-design-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.3573 0.0866699L16.3093 5.66667H9.688L10.6427 0.580003L8.024 0.0866699L6.976 5.66667H1.33333V8.33334H6.476L5.47467 13.6667H0V16.3333H4.97467L4.02267 21.4067L6.64267 21.8987L7.688 16.3333H14.3093L13.3573 21.4067L15.9773 21.8987L17.0213 16.3333H22.6667V13.6667H17.5213L18.5227 8.33334H24V5.66667H19.0227L19.9773 0.580003L17.3573 0.0866699ZM14.808 13.6667H8.188L9.18933 8.33334H15.8107L14.808 13.6667Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="smo-title">SMO</h3>
+            <p id="smo-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 29.3333C17.4728 29.3333 18.6667 28.1394 18.6667 26.6667C18.6667 25.1939 17.4728 24 16 24C14.5272 24 13.3333 25.1939 13.3333 26.6667C13.3333 28.1394 14.5272 29.3333 16 29.3333Z"
+                fill="#00509E"
+              />
+              <path
+                d="M16 8.00008C17.4728 8.00008 18.6667 6.80617 18.6667 5.33341C18.6667 3.86066 17.4728 2.66675 16 2.66675C14.5272 2.66675 13.3333 3.86066 13.3333 5.33341C13.3333 6.80617 14.5272 8.00008 16 8.00008Z"
+                fill="#00509E"
+              />
+              <path
+                d="M8.45733 26.2093C9.93009 26.2093 11.124 25.0154 11.124 23.5426C11.124 22.0699 9.93009 20.876 8.45733 20.876C6.98457 20.876 5.79066 22.0699 5.79066 23.5426C5.79066 25.0154 6.98457 26.2093 8.45733 26.2093Z"
+                fill="#00509E"
+              />
+              <path
+                d="M23.5427 11.1241C25.0154 11.1241 26.2093 9.9302 26.2093 8.45744C26.2093 6.98468 25.0154 5.79077 23.5427 5.79077C22.0699 5.79077 20.876 6.98468 20.876 8.45744C20.876 9.9302 22.0699 11.1241 23.5427 11.1241Z"
+                fill="#00509E"
+              />
+              <path
+                d="M5.33333 18.668C6.80682 18.668 8.00133 17.4735 8.00133 16C8.00133 14.5265 6.80682 13.332 5.33333 13.332C3.85983 13.332 2.66533 14.5265 2.66533 16C2.66533 17.4735 3.85983 18.668 5.33333 18.668Z"
+                fill="#00509E"
+              />
+              <path
+                d="M26.6667 18.6666C28.1394 18.6666 29.3333 17.4727 29.3333 15.9999C29.3333 14.5272 28.1394 13.3333 26.6667 13.3333C25.1939 13.3333 24 14.5272 24 15.9999C24 17.4727 25.1939 18.6666 26.6667 18.6666Z"
+                fill="#00509E"
+              />
+              <path
+                d="M8.45733 11.1253C9.93009 11.1253 11.124 9.93142 11.124 8.45866C11.124 6.9859 9.93009 5.79199 8.45733 5.79199C6.98457 5.79199 5.79066 6.9859 5.79066 8.45866C5.79066 9.93142 6.98457 11.1253 8.45733 11.1253Z"
+                fill="#00509E"
+              />
+              <path
+                d="M23.5427 26.2108C25.0154 26.2108 26.2093 25.0169 26.2093 23.5441C26.2093 22.0713 25.0154 20.8774 23.5427 20.8774C22.0699 20.8774 20.876 22.0713 20.876 23.5441C20.876 25.0169 22.0699 26.2108 23.5427 26.2108Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="wpo-title">WPO</h3>
+            <p id="wpo-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.3333 24.0001C15.7 23.9996 17.9984 23.2073 19.8627 21.7494L25.724 27.6107L27.6093 25.7254L21.748 19.8641C23.2067 17.9996 23.9994 15.7007 24 13.3334C24 7.45208 19.2147 2.66675 13.3333 2.66675C7.45201 2.66675 2.66667 7.45208 2.66667 13.3334C2.66667 19.2147 7.45201 24.0001 13.3333 24.0001ZM13.3333 5.33341C17.7453 5.33341 21.3333 8.92141 21.3333 13.3334C21.3333 17.7454 17.7453 21.3334 13.3333 21.3334C8.92134 21.3334 5.33334 17.7454 5.33334 13.3334C5.33334 8.92141 8.92134 5.33341 13.3333 5.33341Z"
+                fill="#00509E"
+              />
+              <path
+                d="M15.216 11.4481C15.7213 11.9548 16 12.6241 16 13.3334H18.6667C18.6679 12.6327 18.5301 11.9386 18.2614 11.2914C17.9928 10.6442 17.5985 10.0567 17.1013 9.56278C15.0827 7.54678 11.5827 7.54678 9.56534 9.56278L11.448 11.4508C12.4613 10.4401 14.208 10.4428 15.216 11.4481Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="seo-title">SEO</h3>
+            <p id="seo-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+
+          <article class="service__card">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.6667 4H5.33334C4.62609 4 3.94782 4.28095 3.44772 4.78105C2.94762 5.28115 2.66667 5.95942 2.66667 6.66667V12C2.66667 12.7072 2.94762 13.3855 3.44772 13.8856C3.94782 14.3857 4.62609 14.6667 5.33334 14.6667H26.6667C27.3739 14.6667 28.0522 14.3857 28.5523 13.8856C29.0524 13.3855 29.3333 12.7072 29.3333 12V6.66667C29.3333 5.95942 29.0524 5.28115 28.5523 4.78105C28.0522 4.28095 27.3739 4 26.6667 4ZM5.33334 12V6.66667H26.6667V12H5.33334ZM26.6667 17.3333H5.33334C4.62609 17.3333 3.94782 17.6143 3.44772 18.1144C2.94762 18.6145 2.66667 19.2928 2.66667 20V25.3333C2.66667 26.0406 2.94762 26.7189 3.44772 27.219C3.94782 27.719 4.62609 28 5.33334 28H26.6667C27.3739 28 28.0522 27.719 28.5523 27.219C29.0524 26.7189 29.3333 26.0406 29.3333 25.3333V20C29.3333 19.2928 29.0524 18.6145 28.5523 18.1144C28.0522 17.6143 27.3739 17.3333 26.6667 17.3333ZM5.33334 25.3333V20H26.6667V25.3333H5.33334Z"
+                fill="#00509E"
+              />
+              <path
+                d="M22.6667 8H25.3333V10.6667H22.6667V8ZM18.6667 8H21.3333V10.6667H18.6667V8ZM22.6667 21.3333H25.3333V24H22.6667V21.3333ZM18.6667 21.3333H21.3333V24H18.6667V21.3333Z"
+                fill="#00509E"
+              />
+            </svg>
+            <h3 id="web-hosting-title">Web Hosting</h3>
+            <p id="web-hosting-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              asperiores, excepturi cumque repudiandae corrupti aspernatur.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h3 class="section__title" id="portfolio-title">My Work</h3>
+
+        <div class="projects__container">
+          <div class="projects__project">
+            <div class="project__image">
+              <img src="asset/image/work1.png" loading="lazy" alt="project 1" />
+            </div>
+            <div class="project__info">
+              <h3 class="project__name" id="project1-name">Project 1</h3>
+              <p class="project__description" id="project1-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum, suscipit! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Dolorum, suscipit!
+              </p>
+
+              <div class="project__buttons">
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-demo1"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-code1"
+                >
+                  View Code
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="project__image">
+              <img src="asset/image/work2.png" loading="lazy" alt="project 2" />
+            </div>
+            <div class="project__info">
+              <h3 class="project__name" id="project2-name">Project 2</h3>
+              <p class="project__description" id="project2-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum, suscipit! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Dolorum, suscipit!
+              </p>
+
+              <div class="project__buttons">
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-demo2"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-code2"
+                >
+                  View Code
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="project__image">
+              <img src="asset/image/work5.png" loading="lazy" alt="project 3" />
+            </div>
+            <div class="project__info">
+              <h3 class="project__name" id="project3-name">Project 3</h3>
+              <p class="project__description" id="project3-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum, suscipit! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Dolorum, suscipit!
+              </p>
+
+              <div class="project__buttons">
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-demo3"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-code3"
+                >
+                  View Code
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="project__image">
+              <img src="asset/image/work6.png" alt="project 4" />
+            </div>
+            <div class="project__info">
+              <h3 class="project__name" id="project4-name">Project 4</h3>
+              <p class="project__description" id="project4-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum, suscipit! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Dolorum, suscipit!
+              </p>
+
+              <div class="project__buttons">
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-demo4"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="project__button btn"
+                  type="button"
+                  id="view-code4"
+                >
+                  View Code
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h3 class="section__title" id="contact-title">Interested?</h3>
+
+        <div class="contact__container">
+          <div class="contact__info">
+            <h3 class="contact__info--title" id="contact-info-title">
+              Get in Touch
+            </h3>
+            <address class="contact__info--data">
+              <div class="contact__info--item">
+                <i class="bx bxl-whatsapp"></i>
+                <span class="contact__info-number">
+                  <a
+                    href="https://wa.me/0000000000000?text=Your%20Message%20Here"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                  >
+                    <span id="whatsapp-link">Send me a WhatsApp</span>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info--item">
+                <i class="bx bx-phone"></i>
+                <span class="contact__info-number">
+                  <a
+                    href="tel:1-234-567-8910"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                  >
+                    <span id="phone-number">+56 962767812</span>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info--item">
+                <i class="bx bxs-envelope"></i>
+                <span class="contact__info-mail">
+                  <a
+                    id="mail"
+                    href="mailto:test@correo.com"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                  >
+                    <span id="email-address">Contacto.jesusjara@gmail.com</span>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info--item">
+                <i class="bx bx-map"></i>
+                <span class="contact__info-map" id="location"
+                  >Santiago, Chile</span
+                >
+              </div>
+            </address>
+          </div>
+
+          <form class="form" id="form">
+            <div class="form__container">
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  placeholder=" "
+                  autocomplete="name"
+                  required
+                />
+                <label for="name" class="form__label" id="name-label"
+                  >Name:</label
+                >
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                  placeholder=" "
+                  autocomplete="email"
+                />
+                <label for="email" class="form__label" id="email-label"
+                  >Email:</label
+                >
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="subject"
+                  placeholder=" "
+                />
+                <label for="subject" class="form__label" id="subject-label"
+                  >Subject:</label
+                >
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group">
+                <textarea
+                  name="message"
+                  class="form__input"
+                  id="message"
+                  placeholder=" "
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <label for="message" class="form__label" id="message-label"
+                  >Message:</label
+                >
+                <span class="form__line"></span>
+              </div>
+
+              <input
+                type="submit"
+                class="btn form__btn"
+                value="Send"
+                id="send-button"
+              />
+            </div>
+          </form>
+
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span id="close-btn" class="close">
+                <i class="bx bx-x"></i>
+              </span>
+              <p id="modal-message">¡Su mensaje fue enviado exitosamente!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__container">
+        <div class="footer__info">
+          <h3 class="footer__title" id="footer-title">Jesus Jara</h3>
+          <p class="footer__description" id="footer-description">
+            Building impactful digital solutions. Full Stack Developer dedicated
+            to delivering smooth, scalable web experiences.
+          </p>
+        </div>
+        <div class="footer__social">
+          <h3 class="footer__social--title" id="social-media-title">
+            Social Media
+          </h3>
+          <ul class="footer__social--list">
+            <li class="footer__social--item">
+              <a
+                class="footer__social-link"
+                aria-label="Facebook"
+                href="https://web.facebook.com/JesusJaraDev"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+
+            <li class="footer__social--item">
+              <a
+                class="footer__social-link"
+                aria-label="Github"
+                href="https://github.com/JM-jesus"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+
+            <li class="footer__social--item">
+              <a
+                class="footer__social-link"
+                href="https://x.com/MiguelJara7038https://x.com/MiguelJara7038"
+                target="_blank"
+                aria-label="Twitter"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+
+            <li class="footer__social--item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/jesus-miguel-jara-955689341/"
+                target="_blank"
+                aria-label="LinkedIn"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy" id="footer-copy">© 2024, All rights reserved</p>
+    </footer>
+    <button class="back__to--top">
+      <i class="bx bxs-chevron-up"></i>
+    </button>
+  </body>
+</html>
