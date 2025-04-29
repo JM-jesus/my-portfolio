@@ -918,7 +918,7 @@ color: var(--footer-link-hover);
 
 @media (min-width: 1200px){
     html{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .home__content h2{

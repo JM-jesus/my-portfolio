@@ -17,5 +17,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initLoader();
   sendEmail();
   initModal();
-  closeModal();
 });
